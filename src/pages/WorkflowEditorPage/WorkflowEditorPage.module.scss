@@ -1,0 +1,18 @@
+.editorPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9fb;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .mainArea {
+    margin-left: 250px;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  
+  

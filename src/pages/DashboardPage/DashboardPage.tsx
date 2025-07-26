@@ -31,19 +31,16 @@ const DashboardPage: React.FC = () => {
         <section className={styles.workflowSection}>
           <h2>Saved Workflows</h2>
           <div className={styles.workflowGrid}>
-            {workflows.length > 0 ? (
-              workflows.map((wf) => (
-                <WorkflowCard
-                  key={wf.id}
-                  title={wf.title}
-                  description={wf.description ?? "No description available"}
-                  lastEdited={wf.last_edited ?? "N/A"}
-                />
-              ))
-            ) : (
-              <p>No saved workflows found.</p>
-            )}
-          </div>
+  {workflows.map((wf) => (
+    <WorkflowCard
+      key={wf.id}
+      id={wf.id}
+      title={wf.title}
+      description={wf.description || ''}
+      lastEdited={wf.last_edited || 'N/A'}
+    />
+  ))}
+</div>
         </section>
 
         <section className={styles.recentRuns}>

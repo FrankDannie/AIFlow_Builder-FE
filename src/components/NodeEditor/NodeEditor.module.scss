@@ -1,0 +1,69 @@
+.nodeEditor {
+  width: 280px;
+  background-color: #ffffff;
+  border-left: 1px solid #e0e0e0;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.fieldGroup {
+  margin-bottom: 1.25rem;
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.saveButton {
+  padding: 0.6rem 1rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+
+  &:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: #2563eb;
+  }
+}

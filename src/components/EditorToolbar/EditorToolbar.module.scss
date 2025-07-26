@@ -1,0 +1,48 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background-color: #f8fafc; // softer background
+  border-bottom: 1px solid #d1d5db; // lighter border
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-left: 250px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toolbar h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #1f2937; // dark slate gray
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem; // more space between buttons
+
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6; // nicer blue
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    min-width: 90px;
+    text-align: center;
+
+    &:hover {
+      background-color: #2563eb; // darker blue on hover
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.6);
+    }
+
+    &:active {
+      background-color: #1e40af;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.executionLogs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+    padding: 1rem;
+    font-size: 0.85rem;
+    overflow-y: auto;
+    border-top: 1px solid #444;
+    z-index: 10;
+  }
+  
+  .logEntry {
+    margin-bottom: 0.5rem;
+    white-space: pre-wrap;
+  
+    &.info {
+      color: #93c5fd;
+    }
+  
+    &.error {
+      color: #f87171;
+    }
+  
+    &.tool_call {
+      color: #34d399;
+    }
+  }
+  

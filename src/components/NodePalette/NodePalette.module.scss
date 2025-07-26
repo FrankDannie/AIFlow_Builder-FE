@@ -1,0 +1,32 @@
+.nodePalette {
+    width: 240px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .categoryTitle {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  .nodeList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nodeItem {
+    padding: 0.5rem;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    cursor: grab;
+    transition: background 0.2s;
+  
+    &:hover {
+      background-color: #e5e7eb;
+    }
+  }
+  

@@ -5,7 +5,7 @@ export async function loginUser(email: string, password: string) {
   form.append('username', email)
   form.append('password', password)
 
-  const response = await fetch(`${API_BASE}/api/auth/login`, {
+  const response = await fetch(`${API_BASE}/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: form.toString(),
@@ -16,7 +16,7 @@ export async function loginUser(email: string, password: string) {
 }
 
 export async function signupUser(email: string, password: string) {
-  const response = await fetch(`${API_BASE}/api/auth/signup`, {
+  const response = await fetch(`${API_BASE}/auth/signup`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, password }),

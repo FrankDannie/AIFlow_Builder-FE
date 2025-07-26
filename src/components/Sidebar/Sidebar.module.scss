@@ -1,0 +1,33 @@
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-right: 1px solid #e0e0e0;
+    position: fixed;
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+  
+    .navList {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 1rem;
+  
+        a {
+          text-decoration: none;
+          color: #333;
+  
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
+  

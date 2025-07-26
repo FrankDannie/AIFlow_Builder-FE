@@ -1,0 +1,31 @@
+.dashboard {
+    display: flex;
+  }
+  
+  .mainContent {
+    margin-left: 250px;
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .workflowSection {
+    margin-top: 2rem;
+  }
+  
+  .workflowGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .recentRuns {
+    margin-top: 2.5rem;
+  }
+  

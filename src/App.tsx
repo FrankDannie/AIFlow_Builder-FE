@@ -1,6 +1,6 @@
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
-import DashboardPage from './pages/DashboardPage'
+import DashboardPage from './pages/DashboardPage/DashboardPage'
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 export default function App() {

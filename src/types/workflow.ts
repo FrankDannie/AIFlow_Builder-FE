@@ -1,18 +1,25 @@
 export interface Workflow {
-    nodes: any
+    nodes: Node[]
     id: number
     title: string
     description?: string
     last_edited: string
+    edges?: Edge[];
   }
 
 // src/types/workflow.ts
-export type Node = {
+export interface Node {
   id: string;
   name: string;
-  type: string; // this must be present
   prompt: string;
   model: string;
-  // add any other fields here
-};
+  type: string;
+}
 
+export interface Edge {
+  id: string;
+  source: string;
+  target: string;
+  label?: string;
+  // Add any other fields your backend requires
+}

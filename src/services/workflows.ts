@@ -1,4 +1,4 @@
-import type { Workflow, Node } from "../types/workflow"
+import type { Workflow, Node, Edge } from "../types/workflow"
 
 const API_BASE = import.meta.env.VITE_API_BASE
 
@@ -47,4 +47,15 @@ export async function getWorkflows(): Promise<Workflow[]> {
   
     const updatedWorkflow = await response.json();
     return updatedWorkflow;
+  }
+
+  export async function updateWorkflowGraph(id: number, data: { nodes: Node[]; edges: Edge[] }) {
+    return fetch(`/api/workflows/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      if (!res.ok) throw new Error('Failed to update workflow graph');
+      return res.json();
+    });
   }
